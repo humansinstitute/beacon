@@ -1,2 +1,3 @@
-# beacon
-An open protocol for freedom tech access for all with minimal on device state. 
+# Beacon
+
+An open protocol offering access to freedom tech, with no on device install and minimal barrier to entry sign up. 
