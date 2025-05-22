@@ -1,0 +1,17 @@
+{
+    "name": "@beacon/localRelay",
+    "version": "1.0.0",
+    "private": true,
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon index.js"
+    },
+    "dependencies": {
+        "better-sqlite3": "^11.0.0",
+        "dotenv": "^16.5.0",
+        "nostr-tools": "^1.9.0",
+        "ws": "^8.13.0"
+    }
+}

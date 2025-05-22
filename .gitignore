@@ -145,3 +145,13 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# WhatsApp Web JS session files
+.wwebjs_auth/
+gateway/whatsapp/.wwebjs_auth/
+gateway/whatsapp/.wwebjs_cache/
+
+# SQLite databases and related files
+*.db
+*.db-shm
+*.db-wal

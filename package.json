@@ -1,0 +1,30 @@
+{
+    "name": "beacon-monorepo",
+    "private": true,
+    "version": "1.0.0",
+    "description": "Monorepo for Beacon API and Gateways",
+    "workspaces": [
+        "api",
+        "gateway/whatsapp",
+        "localRelay"
+    ],
+    "scripts": {
+        "bootstrap": "npm install",
+        "dev:api": "npm run dev -w @beacon/api",
+        "start:api": "npm start -w @beacon/api",
+        "dev:whatsapp": "npm run dev -w @beacon/whatsapp",
+        "start:whatsapp": "npm start -w @beacon/whatsapp",
+        "dev:localRelay": "npm run dev -w @beacon/localRelay",
+        "start:localRelay": "npm start -w @beacon/localRelay",
+        "dev": "concurrently \"npm:dev:api\" \"npm:dev:whatsapp\" \"npm:dev:localRelay\"",
+        "start": "npm run start --workspaces --if-present",
+        "lint": "eslint . --ext .js",
+        "format": "prettier --write \"**/*.{js,json,md}\""
+    },
+    "devDependencies": {
+        "concurrently": "^9.1.2",
+        "eslint": "^9.27.0",
+        "nodemon": "^3.1.10",
+        "prettier": "^3.5.3"
+    }
+}
